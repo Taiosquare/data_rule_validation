@@ -47,6 +47,8 @@ exports.validateRule = (req, res) => {
             );
         }
     } catch (error) {
+        console.log(error);
+        
         res.status(400).json({
             error: "An error occurred while trying to validate the rule, please try again"
         });
